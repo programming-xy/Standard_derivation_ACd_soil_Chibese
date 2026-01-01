@@ -179,9 +179,9 @@ def derive_acd_standard(model, data_stats, r2_log_scale):
             linewidth=CONFIG["STANDARD_DERIVE_CONFIG"]["plot"]["linewidth"]
         )
         
-        ax.set_xlabel('pH', fontsize=12, fontweight='bold', labelpad=5)
+        ax.set_xlabel('pH', fontsize=12, fontweight='bold', labelpad=3)
         ax.set_ylabel('PSS (%)', fontsize=12, fontweight='bold', labelpad=5)
-        ax.set_zlabel('SOM (g/kg)', fontsize=12, fontweight='bold', labelpad=3)
+        ax.set_zlabel('SOM (g/kg)', fontsize=12, fontweight='bold', labelpad=5)
         
         cbar = fig.colorbar(scatter, ax=ax, 
                            pad=CONFIG["STANDARD_DERIVE_CONFIG"]["plot"]["colorbar_pad"],
