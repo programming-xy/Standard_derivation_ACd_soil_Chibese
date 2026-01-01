@@ -162,7 +162,7 @@ def derive_acd_standard(model, data_stats, r2_log_scale):
             corrected_median = round(raw_median / r2_log_scale, CONFIG["STANDARD_DERIVE_CONFIG"]["decimal"])
         
         # 绘图配置
-        plt.rcParams["font.family"] = "SimHei"
+        plt.rcParams["font.family"] = "Times New Roman"
         plt.rcParams["axes.unicode_minus"] = False
         
         fig = plt.figure(figsize=CONFIG["STANDARD_DERIVE_CONFIG"]["plot"]["figsize"], 
@@ -181,7 +181,7 @@ def derive_acd_standard(model, data_stats, r2_log_scale):
         
         ax.set_xlabel('pH', fontsize=12, fontweight='bold', labelpad=3)
         ax.set_ylabel('PSS (%)', fontsize=12, fontweight='bold', labelpad=5)
-        ax.set_zlabel('SOM (g/kg)', fontsize=12, fontweight='bold', labelpad=5)
+        ax.set_zlabel('SOM (g/kg)', fontsize=12, fontweight='bold', labelpad=7)
         
         cbar = fig.colorbar(scatter, ax=ax, 
                            pad=CONFIG["STANDARD_DERIVE_CONFIG"]["plot"]["colorbar_pad"],
